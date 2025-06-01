@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Reservation - Home</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    div {
+      margin-bottom: 20px;
+    }
+    a.button, button {
+      background: #007bff;
+      color: white;
+      padding: 5px 10px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+    a.button:hover, button:hover {
+      background: #0056b3;
+    }
+    .room {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Our Hotel</h1>
+  <h2>Available Rooms</h2>
+
+  <div class="room">
+    <h3>Deluxe Room</h3>
+    <p>Spacious room with sea view and king-sized bed.</p>
+    <p>Price: $120 per night</p>
+    <a class="button" href="#booking">Book Now</a>
+  </div>
+
+  <div class="room">
+    <h3>Standard Room</h3>
+    <p>Comfortable room with queen-sized bed and free Wi-Fi.</p>
+    <p>Price: $80 per night</p>
+    <a class="button" href="#booking">Book Now</a>
+  </div>
+
+  <div class="room">
+    <h3>Suite</h3>
+    <p>Luxury suite with living room and jacuzzi.</p>
+    <p>Price: $200 per night</p>
+    <a class="button" href="#booking">Book Now</a>
+  </div>
+
+  <hr id="booking">
+
+  <h2>Book a Room</h2>
+  <form onsubmit="alert('This is a static demo. Booking not processed.')">
+    <label>Name: <input type="text" required></label><br><br>
+    <label>Email: <input type="email" required></label><br><br>
+    <label>Check-in: <input type="date" required></label><br><br>
+    <label>Check-out: <input type="date" required></label><br><br>
+    <button type="submit">Confirm Booking</button>
+  </form>
+
+</body>
+</html>
